@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+:root{
+    --primary-color: #148700;
+    --secondary-color: #F39031;
+    --textSystem-color: black;
+    --white-text: white;
+
+}
+
+
+.text-black{
+    color: var(--textSystem-color);
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    background: var(--primary-color);
+}
+
+
+.ant-menu-submenu-selected{
+    color: var(--primary-color);
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f4f6f6;
+    width: 100%;
+    display: block;
+}
+
+#root{
+    width: 100%;
+    height: 100%;
+}
+
+.hero{
+    height: 100vh;
+}
+
+.hero_title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+}
+
+.hero-subtitle{
+    font-weight: 500;
+    margin: 1rem 0 1rem 0rem;
+}
+
+.About_us{
+    color: var(--textSystem-color);
+}
+
+/* From Uiverse.io by VitorBaraoDias */ 
+.form-control a{
+    color: var(--secondary-color)x;
+}
+
+.form-control {
+    margin: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px;
+    border-radius: 8px;
+  }  .title {
+    font-size: 28px;
+    font-weight: 800;
+  }
+  .input-field {
+    position: relative;
+    width: 100%;
+  }
+  
+  .input {
+    margin-top: 15px;
+    width: 100%;
+    outline: none;
+    border-radius: 8px;
+    height: 45px;
+    border: 1.5px solid #ecedec;
+    background: transparent;
+    padding-left: 10px;
+  }
+  .input:focus {
+    border: 1.5px solid var(--primary-color)    ;
+  }
+  .input-field .label {
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    color: #ccc;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    z-index: 2;
+  }
+  .input-field .input:focus ~ .label,
+  .input-field .input:valid ~ .label {
+    top: 5px;
+    left: 5px;
+    font-size: 12px;
+    color: var(--primary-color);
+    background-color: #ffffff;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .submit-btn {
+    margin-top: 30px;
+    height: 55px;
+    background: #f2f2f2;
+    border-radius: 11px;
+    border: 0;
+    outline: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #148700 0%, #148700 50%, #148700 100%);
+    box-shadow: 0px 0px 0px 0px #ffffff, 0px 0px 0px 0px var(--primary-color);
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    box-shadow: 0px 0px 0px 2px #ffffff, 0px 0px 0px 4px var(--primary-color);
+  }
+  
