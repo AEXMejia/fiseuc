@@ -1,33 +1,34 @@
-import { useState,  } from 'react';
-import { Flex, Menu, Layout, Breadcrumb, Button } from 'antd';
+import { Flex, Menu, Layout, Breadcrumb, Button, Avatar } from 'antd';
+
+import { Children } from 'react';
 const { Header, Content, Footer, sider } = Layout
 
 
 
-const Navbar = () => {
 
 
 
-
-    const handle_evenet = ()=>{
-        window.location.href = "/login" 
-    }
-
-
-
+const DashNavbar = () => {
 
 
     const Items = [
         {
-            label: <a href="/#inicio">Inicio</a>,
+            label: <a href="/"></a>,
             key: '/inicio',
         },
         {
-            label: <a href="/#about_us">¿Que es Fiseuc?</a>,
+            label: <a href="/#about_us"></a>,
             key: '/about-us',
         },
         {
-            label:<Button type="primary" shape="round" onClick={handle_evenet} >Acceder</Button>
+            label:    <Avatar  size={42} src="" />    ,
+            children: [
+                {
+                    label: <a href='/'>Salir</a>,
+                    key:"1.4"
+                }
+
+            ]
         }
     ]
 
@@ -43,7 +44,7 @@ const Navbar = () => {
             }}
         >
             <div className="demo-logo" >
-                <a href="/" className='brandTitle'><h2>Fiseuc</h2></a>
+                <h2>Fiseuc</h2>
             </div>
             <Menu
                 mode="horizontal"
@@ -62,4 +63,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar;
+export default DashNavbar;

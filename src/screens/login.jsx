@@ -1,6 +1,7 @@
 import Navbar from "../components/navbar"
 import LoginForm from "../components/login_form"
 import {Layout} from  "antd"
+const {Footer} = Layout
 
 
 const Login = ()=>{
@@ -8,6 +9,7 @@ const Login = ()=>{
         <Layout>
             <Navbar></Navbar>
             <LoginForm></LoginForm>
+
         </Layout>
     )
 }

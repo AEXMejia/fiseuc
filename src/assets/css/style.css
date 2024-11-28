@@ -28,6 +28,15 @@
     background: var(--primary-color);
 }
 
+.brandTitle{
+  color: var(--primary-color);
+}
+
+.brandTitle:hover{
+  transform: scale(1.1);
+  color: var(--secondary-color);
+}
+
 
 .ant-menu-submenu-selected{
     color: var(--primary-color);
@@ -75,7 +84,8 @@ body{
 .form-control {
     margin: 20px;
     background-color: #ffffff;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+   /* box-shadow: 0 15px 25px rgba(1, 213, 5, 0.6); */
+   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
     width: 400px;
     display: flex;
     justify-content: center;
@@ -101,6 +111,7 @@ body{
     border: 1.5px solid #ecedec;
     background: transparent;
     padding-left: 10px;
+    color: black;
   }
   .input:focus {
     border: 1.5px solid var(--primary-color)    ;
